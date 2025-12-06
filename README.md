@@ -1,8 +1,10 @@
+
 # Beyond Braden: HAPI Prediction Data Pipeline
 
 This repository contains the complete end-to-end data engineering and modeling pipeline for the **Hospital-Acquired Pressure Injury (HAPI)** prediction project. 
 
 The project processes raw clinical data from the **MIMIC-IV** database, engineers features across multiple clinical domains (demographics, medications, labs, notes), and trains machine learning models to identify at-risk patients.
+## Link to Presentation: https://youtu.be/XIPB1rXmFLY
 
 ## Project Architecture
 
@@ -107,3 +109,4 @@ This script performs:
 ### Libraries
 ```bash
 pip install pandas numpy scikit-learn xgboost matplotlib seaborn
+
