@@ -87,7 +87,7 @@ To reproduce the dataset, run the notebooks in the following numerical order. En
 
 Once Step 14 is complete and all intermediate CSVs are merged into the final analytic file, run the model training pipeline.
 
-**File:** `hapi_model_pipeline.py`
+**File:** `hapi_model_pipeline.ipynb`
 
 This script performs:
 1.  **Leakage Cleaning:** Automatically removes features highly correlated with the label (|r| > 0.95) or containing future information.
