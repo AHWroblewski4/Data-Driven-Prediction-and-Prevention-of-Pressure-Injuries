@@ -81,11 +81,15 @@ To reproduce the dataset, run the notebooks in the following numerical order. En
     * **Action:** Consolidates all medication data into a master feature set.
     * **Output:** `medications_master_feat.csv`
 
----
+### Phase 5: Final Data Assembly (Master Merge)
+* **15.master_merge_analytic.inypb**
+    * **Inputs:** **All** `*_feat.csv` files (up to 18 tables), including `hospitalwide_hapi_labels.csv`.
+    * **Action:** Merges all feature tables using a robust, error-checking `left merge` on `hadm_id`.
+    * **Output:** `FINAL_HAPI_ANALYTIC.csv`
 
 ## Final Modeling
 
-Once Step 14 is complete and all intermediate CSVs are merged into the final analytic file, run the model training pipeline.
+Once Step 15 is complete and all intermediate CSVs are merged into the final analytic file, run the model training pipeline.
 
 **File:** `hapi_model_pipeline.ipynb`
 
